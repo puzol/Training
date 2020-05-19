@@ -1,0 +1,2 @@
+# Training
+Samo za vjezbu
