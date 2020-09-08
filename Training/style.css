@@ -11,11 +11,35 @@
     margin: auto;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .logo{
     position: relative;
     left: 60%;
     transform: scale(0.3);
+}
+.naslovnicaText{
+    display: flex;
+    flex-direction: column;
+    
+}
+.nowOpening{
+    font-size: 40px;
+    margin-left: auto;
+    padding-right: 100px;
+}
+.openingDate{
+    font-size: 40px;
+    margin-left: auto;
+    padding-right: 100px;
+}
+.learnMore{
+    font-size: 40px;
+    margin-left: auto;
+    margin-top: 100px;
+    padding-right: 100px;
+    background-color: #45493b;
+    text-align: center;
 }
 .nav{
     right: 10%;
@@ -55,17 +79,59 @@
 }
 .next2{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 40vh;
-    padding: 10%;
     background: #45493b;
     color: #e8e8e8;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    
 }
+
 .text2{
-    padding: 20px;
-    margin: 20px;
+    margin: 2rem;
+    flex-wrap: wrap;
 }
-h3{
-    margin: 0px 0px 25px 0px;
+.grid{
+    
+    background-color: #45493B;
+}
+.grid h4{
+    font-size: 50px;
+    text-align: center;
+    margin: 30px 0;
+}
+.gridContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gridSlot {
+    display: flex;
+    flex-direction: row;
+}
+.gridText{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+@media only screen and (max-width: 600px){
+    .nav{
+        right: 10%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        list-style: none;
+        z-index: 2;
+        color: #9baf6d;
+    }
+    .logo{
+        right: 50px;
+    }
+    .next2{
+        flex-wrap:wrap;
+    }
 }
