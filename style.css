@@ -30,7 +30,7 @@ body{
     padding: 40px 20px;
     border: 5px solid transparent;
     background: rgba(0,0,0,0);
-    transition:1s;
+    transition:left 1s, border 1s, background 1s;
 }
 
 .title{
@@ -42,12 +42,12 @@ body{
     padding: 0 20px 0 20px;
     text-align: center;
     opacity:0;
-    transition: 1s 1s;
+    transition:opacity 1s 1s;
 }
 
 #logo{
     opacity:0;
-    transition:1s 0.5s;
+    transition: opacity 1s 0.5s;
     max-width:250px;
 }
 
@@ -88,7 +88,7 @@ body{
     color: #C7AE58;
     position:relative;
     margin-right:-100%;
-    transition:2s;
+    transition:margin-right 2s;
 }
 
 .nav-list::before{
