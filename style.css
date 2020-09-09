@@ -45,6 +45,8 @@ body{
     text-align: center;
     opacity:0;
     transition:opacity 1s 1s;
+    letter-spacing: 0.35em;
+    margin-right:-0.35em;
 }
 
 #logo{
