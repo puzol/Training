@@ -9,6 +9,11 @@ const hamburgerLine3 = document.getElementById("hamburgerLine3");
 const navId = document.getElementById("navId");
 let counter = 1;
 
+// var card = document.querySelector('.card');
+// card.addEventListener( 'click', function() {
+//   card.classList.toggle('is-flipped');
+// });
+
 
 const moveInLeft =(id)=>{
     id.style.left="50%";
