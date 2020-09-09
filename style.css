@@ -15,7 +15,7 @@ body{
     margin: auto;
     background-size: cover;
     background-repeat: no-repeat;
-    position:relative;
+    position: center;
 }
 
 .logo-and-title{
@@ -52,7 +52,7 @@ body{
 }
 
 #hamburger{
-    display:flex;
+    display:none;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -209,10 +209,6 @@ h3{
 }
 
 @media only screen and (max-device-width:992px){
-
-    #hamburger{
-        display:none;
-    }
 
     #navId{
         display:flex;
