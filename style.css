@@ -51,7 +51,29 @@ body{
     max-width:250px;
 }
 
-nav{
+#hamburger{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px;
+    height:60px;
+    width:70px;
+    background:rgba(0,0,0,0.5);
+    border:1px solid #C7AE58;
+    position:absolute;
+    top:40px;
+    left:50%;
+    transform: translate(-50%);
+}
+
+.hamburger-line{
+    height:3px;
+    width:100%;
+    background:#C7AE58;
+}
+
+#navId{
     width:100%;
     display: flex;
     justify-content: flex-end;
@@ -187,12 +209,30 @@ h3{
 }
 
 @media only screen and (max-device-width:992px){
+
+    #hamburger{
+        display:none;
+    }
+
+    #navId{
+        display:flex;
+    }
+
     .title{
         font-size:50px;
     }
 }
 
 @media only screen and (max-device-width:768px){
+
+    #hamburger{
+        display:flex;
+    }
+
+    #navId{
+        display:none;
+    }
+
     #logo{
         max-width:250px;
     }
@@ -203,6 +243,15 @@ h3{
 }
 
 @media only screen and (max-device-width:576px){
+
+    #hamburger{
+        display:flex;
+    }
+
+    #navId{
+        display:none;
+    }
+
     #logo{
         max-width:200px;
     }

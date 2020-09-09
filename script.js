@@ -18,7 +18,7 @@ const appear=(id1,id2)=>{
 }
 
 const brdrAndBck =(id)=>{
-    id.style.background = "rgba(0,0,0,0.3)";
+    id.style.background = "rgba(0,0,0,0.5)";
     id.style.border = "1px solid #C7AE58";
 }
 
