@@ -1,10 +1,15 @@
 const logoAndTitle = document.getElementById("logoAndTitle");
 const logo = document.getElementById("logo");
 const heroTitle = document.getElementById("heroTitle");
+const navList = document.getElementById("navList");
 
 
-const moveIn =(id)=>{
+const moveInLeft =(id)=>{
     id.style.left="50%";
+}
+
+const moveInRigth=(id)=>{
+    id.style.marginRight="0";
 }
 
 const appear=(id1,id2)=>{
@@ -24,4 +29,8 @@ window.onload = function(){
     setTimeout(function(){
         appear(logo, heroTitle)
     },1700);
+    setTimeout(function(){
+        moveInRigth(navList)
+    },1700);
+
 }
