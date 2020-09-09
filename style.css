@@ -217,6 +217,7 @@ body{
 }
 
 .card__face {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     position: absolute;
     width: 100%;
     height: 100%;
