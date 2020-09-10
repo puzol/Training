@@ -57,6 +57,9 @@ const respMenuClose =()=>{
         navList.classList.add("nav-list");
         navList.classList.remove("nav-list-resp");
         navId.style.display="none";
+        navId.removeAttribute("style");
+        navList.removeAttribute("style");
+        navList.style.marginRight="0";
     },1000)
 }
 
