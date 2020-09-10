@@ -41,12 +41,11 @@ body{
     margin-top:35px;
     font-weight: 300;
     width:100%;
-    padding: 0 20px 0 20px;
+    padding: 0 2px 0 20px;
     text-align: center;
     opacity:0;
     transition:opacity 1s 1s;
-    letter-spacing: 0.35em;
-    margin-right:-0.35em;
+    letter-spacing: 18px;
 }
 
 #logo{
@@ -94,20 +93,6 @@ body{
 .hamburger:hover{
   justify-content:center;
 }
-
-/* .hamburger:hover #hamburgerLine1{
-  top:50%;
-  transform:translate(0, -50%) rotate(45deg);
-}
-
-.hamburger:hover #hamburgerLine2{
-  opacity:0;
-}
-
-.hamburger:hover #hamburgerLine3{
-  top:50%;
-  transform:translate(0, -50%) rotate(-45deg);
-} */
 
 #navId{
     width:100%;
@@ -172,15 +157,47 @@ body{
 }
 
 .next1{
-    background-color:#212121;
-    background-image: url(/img/angle.png);
+    /* background-image: url(img/sushi-back.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: right; 
+    background-position: center; */
+    background:#212121;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 60px 10%;
+    position:relative;
+}
+
+.next1::before{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:1;
+    /* background: rgba(0,0,0,0.5); */
+    background-image: url(img/sushi-line.svg);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    bottom:20px;
+    left:0;
+    opacity:0.8;
+}
+
+.next1::after{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:1;
+    /* background: rgba(0,0,0,0.5); */
+    background-image: url(img/sushi-line.svg);
+    background-repeat: repeat-x;
+    background-position: top;
+    top:20px;
+    left:0;
+    opacity:0.8;
 }
 
 .text1{
@@ -191,11 +208,13 @@ body{
     align-items: left;
     justify-content: center;
     color: #c4c4c4;
+    z-index:10;
 }
 
 .naslov1{
     margin-bottom: 10px;
     color: #afc67b;
+    z-index:10;
 }
 
 .scene {
@@ -204,6 +223,7 @@ body{
     margin: 40px 0;
     perspective: 600px;
     border-radius: 50%;
+    z-index:10;
 }
 
 .card {
